@@ -15,7 +15,7 @@ st.title("AI Chatbot")
 
 user_prompt = st.text_input("Enter your prompt:")
 if user_prompt:
-    response = llm.invoke(user_prompt)  # Use invoke instead of __call__()
+    response = llm.invoke(user_prompt) 
     st.write("***Chatbot:***", response)
 
 
