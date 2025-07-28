@@ -1,64 +1,71 @@
 # Streamlit AI Chatbot
 
-A simple web-based AI chatbot built with Python, Streamlit, and Google Gemini (via LangChain), allowing users to interact with an LLM through an intuitive browser interface.
+![Python](https://img.shields.io and powerful AI chatbot built with Streamlit and Google Gemini. This project provides a clean web interface for real-time conversations with a state-of-the-art language model.
 
-## ✨ Features
+## Core Functionality
 
-- **Conversational AI** using Google Gemini (via LangChain)
-- **Web UI** built with [Streamlit](https://streamlit.io/)
-- **Instant prompt-response** for natural language queries
-- **Simple setup**—just configure your Google API key and run
+-   **Real-time Interaction**: Engage in dynamic, real-time conversations with Google's Gemini model.
+-   **Intuitive UI**: A clean, responsive, and user-friendly interface powered by the Streamlit framework.
+-   **Lightweight & Simple**: Minimal dependencies and straightforward code, making it easy to run and modify.
+-   **Secure Configuration**: Designed to load your API key securely from environment variables.
 
-## 🚀 Getting Started
+## Technology Stack
+
+This project leverages a modern stack for AI application development:
+
+-   **Framework**: [Streamlit](https://streamlit.io/)
+-   **Language Model**: Google Gemini (`gemini-2.0-flash`)
+-   **LLM Orchestration**: [LangChain](https://www.langchain.com/)
+
+## Getting Started
+
+Follow these steps to get the chatbot running on your local machine.
 
 ### Prerequisites
 
-- Python 3.8+
-- Google Gemini API key (from [Google AI](https://aistudio.google.com/app/apikey))
-- `pip` for installing packages
+-   Python 3.8 or newer
+-   An active Google API Key with access to the Gemini model.
 
-### Installation
+### 1. Clone the Repository
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
-    ```
-
-2. **Install dependencies**:
-    ```bash
-    pip install streamlit langchain-google-genai
-    ```
-
-3. **Set your Google API key**:  
-   Replace `"Your-Google-api-key"` in the code or, preferably, set it as an environment variable:
-    ```bash
-    export GOOGLE_API_KEY="your-key-here"
-    ```
-
-### Usage
-
-To launch the chatbot locally:
+First, clone the project to your local machine:
 ```bash
-streamlit run main.py
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
-*(Change `main.py` if your script has a different filename.)*
 
-A web interface will open automatically in your browser. Enter a prompt in the text input box and the chatbot will reply instantly.
+### 2. Install Dependencies
 
-## 📝 Example
+Install the required Python packages using pip:
+```bash
+pip install streamlit langchain-google-genai
+```
 
-![Chatbot Demo Screenshot](https://placehold.co/600x200?text=Demo “What is the capital of France?”  
-2. The chatbot replies: “Paris.”
+### 3. Configure Your API Key
 
-## 🛠️ How it Works
+For security, the application loads your Google API Key from an environment variable.
 
-- The app initializes a Google Gemini LLM via LangChain.
-- Streamlit provides a form for entering prompts and displays the response.
-- All LLM processing happens server-side; no user data is stored.
+**On macOS/Linux:**
+```bash
+export GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+```
 
-## 📄 License
+**On Windows:**
+```powershell
+$env:GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+```
+> **Note:** Remember to replace `"YOUR_API_KEY_HERE"` with your actual key. Do not commit your key directly into the source code.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+### 4. Run the Application
 
-*Feel free to enhance this README with real screenshots, more instructions, or contribution guidelines to match your project goals!*
+Launch the Streamlit server:
+```bash
+streamlit run app.py
+```
+*(Replace `app.py` with the name of your Python script if it's different.)*
+
+Your default web browser will open a new tab with the running chatbot application.
+
+## License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file in the repository for the full text.
