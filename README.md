@@ -1,6 +1,10 @@
 # Streamlit AI Chatbot
 
 ![Python](https://img.shields.io and powerful AI chatbot built with Streamlit and Google Gemini. This project provides a clean web interface for real-time conversations with a state-of-the-art language model.
+### 🤖 Live Demo
+
+*<img width="1911" height="1021" alt="Screenshot 2025-07-29 203001" src="https://github.com/user-attachments/assets/d25645cb-4890-452a-9c73-e9e5c3e8f2b7" />
+*
 
 ## Core Functionality
 
